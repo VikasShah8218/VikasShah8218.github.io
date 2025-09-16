@@ -1,5 +1,4 @@
 # ===== Minimal, professional Academic Pages config for Vikas Shah =====
-# Keep things lean; only relevant sections enabled.
 # Site
 title: "Vikas Shah"
 description: "Software Development Engineer — Django, FastAPI, React, AWS, Kafka. Hardware integration & video analytics."
@@ -9,8 +8,10 @@ baseurl: ""
 timezone: "Asia/Kolkata"
 locale: "en-US"
 
-# Theme
-remote_theme: "academicpages/academicpages"
+# Theme: using AcademicPages template directly (do NOT set remote_theme)
+# If you forked academicpages/academicpages.github.io (recommended), you already have the theme files locally.
+# DO NOT add: remote_theme: academicpages/academicpages
+
 minimal_mistakes_skin: "default"
 highlighter: "rouge"
 markdown: "kramdown"
@@ -20,17 +21,17 @@ kramdown:
 sass:
   style: compressed
 
-# Plugins (lean set)
+# Plugins (lean set; all supported by GitHub Pages)
 plugins:
   - jekyll-include-cache
   - jekyll-sitemap
   - jekyll-seo-tag
   - jekyll-feed
 
-# Author block used by Minimal Mistakes/AcademicPages
+# Author
 author:
   name: "Vikas Shah"
-  avatar: "/images/profile.jpg"   # replace with your photo if different
+  avatar: "/images/profile.jpg"
   bio: >-
     SDE with 2+ years’ experience building ERP, VMS, Access Control & ANPR systems.
     Focus on backend, microservices, and device integrations (Moxa, Adam, HID, IP cameras) with
@@ -56,7 +57,7 @@ author:
 github_username: "VikasShah8218"
 linkedin_username: "mr-vikas-shah-248586253"
 
-# Analytics (leave blank if not used)
+# Analytics (optional)
 google_analytics: ""
 
 # Permalinks
@@ -73,11 +74,7 @@ collections:
     output: true
     permalink: /portfolio/:title/
 
-# Disable unused academic sections by not declaring them:
-# publications, talks, teaching (folders may exist but won't render if not listed above)
-
 # Navigation (top menu)
-# Ensure the pages below exist in _pages/ or adjust to your structure.
 nav:
   - title: "About"
     url: /about/
@@ -88,7 +85,7 @@ nav:
   - title: "Resume"
     url: /files/Mr%20Shah%20Resume.pdf
 
-# Defaults (applies author info to posts and portfolio items)
+# Defaults
 defaults:
   - scope:
       path: ""
