@@ -1,357 +1,117 @@
-# Welcome to Jekyll!
-#
-# This config file is meant for settings that affect your entire site, values
-# which you are expected to set up once and rarely need to edit after that.
-# For technical reasons, this file is *NOT* reloaded automatically when you use
-# `jekyll serve -l -H localhost`. If you change this file, please restart the 
-# server process.
+# ===== Minimal, professional Academic Pages config for Vikas Shah =====
+# Keep things lean; only relevant sections enabled.
+# Site
+title: "Vikas Shah"
+description: "Software Development Engineer — Django, FastAPI, React, AWS, Kafka. Hardware integration & video analytics."
+url: "https://vikasshah8218.github.io"
+baseurl: ""
 
-# Basic Site Settings
-locale                   : "en-US"
-site_theme               : "default" # Currently available options are "default", "air"
-title                    : "Mr. Shah "
-title_separator          : "-"
-name                     : &name "Vikas Shah"
-description              : &description "personal description"
-url                      : https://vikasshah8218.github.io # the base hostname & protocol for your site e.g. "https://[your GitHub username].github.io" or if you already have some other page hosted on Github then use "https://[your GitHub username].github.io/[Your Repo Name]"
-baseurl                  : "" # the subpath of your site, e.g. "/blog"
-repository               : "academicpages/academicpages.github.io"
+timezone: "Asia/Kolkata"
+locale: "en-US"
 
-# Site Author - The following control what appear as part of the author content on the side bar.
-#               If a field is blank the icon and link will not appear, otherwise it will be shown.
-#               Additional customization can be done by editing /_includes/author-profile.html
-author:
-  # Biographic information
-  avatar           : "images/shah.jpeg"
-  name             : "Vikas Shah"
-  pronouns         : # example: "she/her"  
-  bio              : "AI Engineer passionate about ML, Data Science, and Security."
-  location         : "Hisar, Haryana India"
-  employer         : "ESSI Security Integrated Pvt. Ltd."
-  uri              : # URL
-  email            : "shah@essi.co.in" 
-
-  # Academic websites
-  academia         : # URL
-  arxiv            : # URL - Update with the correct link to your profile
-  googlescholar    : "https://scholar.google.com/citations?user=PS_CX0AAAAAJ"
-  inspire-hep      : # URL
-  impactstory      : # URL
-  orcid            : "http://orcid.org/yourorcidurl"
-  semantic         : # URL
-  pubmed           : "https://www.ncbi.nlm.nih.gov/pubmed/?term=john+snow"
-  researchgate     : # URL
-  scopus           : # URL
-
-  # Repositories and software development
-  bitbucket        : # Username - Update with your username on the site
-  codepen          : # Username
-  dribbble         : # Username
-  github           : "academicpages"
-  kaggle           : # Username  
-  stackoverflow    : # User number or user number and name (i.e., use "1" or "1/jeff-atwood")    
-
-  # Social media
-  artstation       : # Usernam
-  bluesky          : "bsky.app" # Replace this with you Bluesky username
-  facebook         : # Username
-  flickr           : # Username
-  foursquare       : # Username
-  goodreads        : # Username
-  google_plus      : # Username
-  keybase          : # Username
-  instagram        : # Username
-  lastfm           : # Username
-  linkedin         : "mr-vikas-shah-248586253"
-  mastodon         : # URL
-  medium           : # URL
-  pinterest        : # Username
-  soundcloud       : # Username
-  steam            : # Username
-  telegram         : # URL
-  tumblr           : # Username
-  twitter          : # Username for X / Twitter
-  vine             : # Username
-  weibo            : # Username
-  wikipedia        : # Username
-  xing             : # Username
-  youtube          : # Username
-  zhihu            : # Username
-
-# Publication Category - The following the list of publication categories and their headings
-publication_category:
-  books:
-    title: 'Books'
-  manuscripts:
-    title: 'Journal Articles'    
-  conferences:
-    title: 'Conference Papers'
-
-# Site Settings
-teaser                   :  # filename of teaser fallback teaser image placed in /images/, .e.g. "500x300.png"
-breadcrumbs              : false # true, false (default)
-words_per_minute         : 160
-future                   : true
-read_more                : "disabled" # if enabled, adds "Read more" links to excerpts
-talkmap_link             : false      #change to true to add link to talkmap on talks page
-comments:
-  provider               : # false (default), "disqus", "discourse", "facebook", "google-plus", "staticman", "custom"
-  disqus:
-    shortname            :
-  discourse:
-    server               : # https://meta.discourse.org/t/embedding-discourse-comments-via-javascript/31963 , e.g.: meta.discourse.org
-  facebook:
-    appid                :
-    num_posts            : # 5 (default)
-    colorscheme          : # "light" (default), "dark"
-staticman:
-  allowedFields          : ['name', 'email', 'url', 'message']
-  branch                 : "gh-pages" # "master", "gh-pages"
-  commitMessage          : "New comment."
-  filename               : comment-{@timestamp}
-  format                 : "yml"
-  moderation             : true
-  path                   : "_data/comments/{options.slug}"
-  requiredFields         : ['name', 'email', 'message']
-  transforms:
-    email                : "md5"
-  generatedFields:
-    date:
-      type               : "date"
-      options:
-        format           : "iso8601" # "iso8601" (default), "timestamp-seconds", "timestamp-milliseconds"
-atom_feed:
-  hide                   : false     # change to true to hide the RSS feed in the footer
-  path                   : # blank (default) uses feed.xml
-
-
-# SEO Related
-google_site_verification :
-bing_site_verification   :
-alexa_site_verification  :
-yandex_site_verification :
-
-
-# Social Sharing
-twitter:
-  username               : &twitter
-facebook:
-  username               :
-  app_id                 :
-  publisher              :
-og_image                 :  # Social media default site image
-og_description           :  # Social media default site image description
-# For specifying social profiles
-# - https://developers.google.com/structured-data/customize/social-profiles
-social:
-  type                   : # Person or Organization (defaults to Person)
-  name                   : # If the user or organization name differs from the site's name
-  links: # An array of links to social media profiles
-
-
-# Analytics
-analytics:
-  provider               :  "false" # false (default), "google", "google-universal", "google-analytics-4", "custom"
-  google:
-    tracking_id          :
-
-
-# Reading Files
-include:
-  - .htaccess
-  - _pages
-  - files
-exclude:
-  - "*.sublime-project"
-  - "*.sublime-workspace"
-  - .asset-cache
-  - .bundle
-  - .github
-  - .jekyll-assets-cache
-  - .sass-cache
-  - assets/js/_main.js
-  - assets/js/plugins
-  - assets/js/vendor
-  - CHANGELOG
-  - Capfile
-  - config
-  - Dockerfile
-  - Gemfile
-  - Gruntfile.js
-  - gulpfile.js
-  - LICENSE
-  - local
-  - log
-  - node_modules
-  - package.json*
-  - Rakefile
-  - README
-  - tmp
-  - vendor
-keep_files:
-  - .git
-  - .svn
-encoding: "utf-8"
-markdown_ext: "markdown,mkdown,mkdn,mkd,md"
-
-
-# Conversion
-markdown: kramdown
-highlighter: rouge
-lsi: false
-excerpt_separator: "\n\n"
-incremental: false
-
-
-# Markdown Processing
+# Theme
+remote_theme: "academicpages/academicpages"
+minimal_mistakes_skin: "default"
+highlighter: "rouge"
+markdown: "kramdown"
 kramdown:
   input: GFM
   hard_wrap: false
-  auto_ids: true
-  footnote_nr: 1
-  entity_output: as_char
-  toc_levels: 1..6
-  smart_quotes: lsquo,rsquo,ldquo,rdquo
-  enable_coderay: false
+sass:
+  style: compressed
 
+# Plugins (lean set)
+plugins:
+  - jekyll-include-cache
+  - jekyll-sitemap
+  - jekyll-seo-tag
+  - jekyll-feed
 
-# These settings control the types of collections used by the template
+# Author block used by Minimal Mistakes/AcademicPages
+author:
+  name: "Vikas Shah"
+  avatar: "/images/profile.jpg"   # replace with your photo if different
+  bio: >-
+    SDE with 2+ years’ experience building ERP, VMS, Access Control & ANPR systems.
+    Focus on backend, microservices, and device integrations (Moxa, Adam, HID, IP cameras) with
+    Django/FastAPI/React on AWS, Kafka/Redis/Celery, and CI/CD. Scaled apps to 5K+ daily sessions,
+    improved response times by ~30%, and optimized video analytics & ANPR pipelines.
+  location: "India"
+  email: "Vikasshah8218@gmail.com"
+  links:
+    - label: "GitHub"
+      icon: "fab fa-github"
+      url: "https://github.com/VikasShah8218"
+    - label: "LinkedIn"
+      icon: "fab fa-linkedin"
+      url: "https://www.linkedin.com/in/mr-vikas-shah-248586253/"
+    - label: "Email"
+      icon: "fas fa-envelope"
+      url: "mailto:Vikasshah8218@gmail.com"
+    - label: "Resume (PDF)"
+      icon: "fas fa-file-pdf"
+      url: "/files/Mr%20Shah%20Resume.pdf"
+
+# Social usernames for SEO
+github_username: "VikasShah8218"
+linkedin_username: "mr-vikas-shah-248586253"
+
+# Analytics (leave blank if not used)
+google_analytics: ""
+
+# Permalinks
+permalink: "/:categories/:title/"
+paginate: 5
+paginate_path: "/page:num/"
+
+# Collections — only what you need
 collections:
-  teaching:
+  posts:
     output: true
-    permalink: /:collection/:path/
-  publications:
-    output: true
-    permalink: /:collection/:path/
+    permalink: /posts/:title/
   portfolio:
     output: true
-    permalink: /:collection/:path/
-  talks:
-    output: true
-    permalink: /:collection/:path/
+    permalink: /portfolio/:title/
 
+# Disable unused academic sections by not declaring them:
+# publications, talks, teaching (folders may exist but won't render if not listed above)
 
-# These settings control how pages and collections are included in the site
+# Navigation (top menu)
+# Ensure the pages below exist in _pages/ or adjust to your structure.
+nav:
+  - title: "About"
+    url: /about/
+  - title: "Projects"
+    url: /portfolio/
+  - title: "Blog"
+    url: /posts/
+  - title: "Resume"
+    url: /files/Mr%20Shah%20Resume.pdf
+
+# Defaults (applies author info to posts and portfolio items)
 defaults:
-  # _posts
   - scope:
       path: ""
-      type: posts
+      type: "posts"
     values:
-      layout: single
+      layout: "single"
       author_profile: true
-      read_time: true
-      comments: true
-      share: true
-      related: true
-  # _pages
   - scope:
       path: ""
-      type: pages
+      type: "portfolio"
     values:
-      layout: single
+      layout: "single"
       author_profile: true
-  # _teaching
-  - scope:
-      path: ""
-      type: teaching
-    values:
-      layout: single
-      author_profile: true
-      share: true
-      comments: true
-  # _publications
-  - scope:
-      path: ""
-      type: publications
-    values:
-      layout: single
-      author_profile: true
-      share: true
-      comments: true
-  # _portfolio
-  - scope:
-      path: ""
-      type: portfolio
-    values:
-      layout: single
-      author_profile: true
-      share: true
-      comment: true
-  # _talks
-  - scope:
-      path: ""
-      type: talks
-    values:
-      layout: talk
-      author_profile: true
-      share: true
 
-
-# Sass/SCSS
-sass:
-  sass_dir: _sass
-  style: compressed # http://sass-lang.com/documentation/file.SASS_REFERENCE.html#output_style
-
-
-# Outputting
-permalink: /:categories/:title/
-# paginate: 5 # amount of posts to show
-# paginate_path: /page:num/
-timezone: Etc/UTC # http://en.wikipedia.org/wiki/List_of_tz_database_time_zones
-
-
-# Plugins
-plugins:
-  - jekyll-feed
-  - jekyll-gist
-  - jekyll-paginate
-  - jekyll-sitemap
-  - jekyll-redirect-from
-  - jemoji
-
-# Mimic GitHub Pages with --safe
-whitelist:
-  - jekyll-feed
-  - jekyll-gist
-  - jekyll-paginate
-  - jekyll-sitemap
-  - jekyll-redirect-from
-  - jemoji
-
-
-# Archives
-#  Type
-#  - GitHub Pages compatible archive pages built with Liquid ~> type: liquid (default)
-#  - Jekyll Archives plugin archive pages ~> type: jekyll-archives
-#  Path (examples)
-#  - Archive page should exist at path when using Liquid method or you can
-#    expect broken links (especially with breadcrumbs enabled)
-#  - <base_path>/tags/my-awesome-tag/index.html ~> path: /tags/
-#  - <base_path/categories/my-awesome-category/index.html ~> path: /categories/
-#  - <base_path/my-awesome-category/index.html ~> path: /
-category_archive:
-  type: liquid
-  path: /categories/
-tag_archive:
-  type: liquid
-  path: /tags/
-# https://github.com/jekyll/jekyll-archives
-# jekyll-archives:
-#   enabled:
-#     - categories
-#     - tags
-#   layouts:
-#     category: archive-taxonomy
-#     tag: archive-taxonomy
-#   permalinks:
-#     category: /categories/:name/
-#     tag: /tags/:name/
-
-
-# HTML Compression
-# - http://jch.penibelst.de/
-compress_html:
-  clippings: all
-  ignore:
-    envs: development
+# Footer
+footer:
+  links:
+    - label: "GitHub"
+      icon: "fab fa-github"
+      url: "https://github.com/VikasShah8218"
+    - label: "LinkedIn"
+      icon: "fab fa-linkedin"
+      url: "https://www.linkedin.com/in/mr-vikas-shah-248586253/"
+    - label: "Email"
+      icon: "fas fa-envelope"
+      url: "mailto:Vikasshah8218@gmail.com"
