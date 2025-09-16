@@ -7,13 +7,13 @@
 
 # Site Settings
 locale                   : "en-US"
-title                    : "Anuj Nagpal"
+title                    : "Vikas Shah"
 title_separator          : "-"
-name                     : &name "Anuj Nagpal"
-description              : &description "Machine Learning at LinkedIn | Past: Stanford, IIT Kanpur, Meta, Goldman Sachs"
-url                      : https://anujnag.github.io # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
+name                     : &name "Vikas Shah"
+description              : &description "Software Developet at ESSI Integrated Private Limited"
+url                      : https://vikasshah8218.github.io # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
-repository               : "anujnag.github.io"
+repository               : "vikasshah8218.github.io"
 teaser                   :  # filename of teaser fallback teaser image placed in /images/, .e.g. "500x300.png"
 breadcrumbs              : false # true, false (default)
 words_per_minute         : 160
@@ -80,14 +80,14 @@ analytics:
 
 # Site Author
 author:
-  name             : "Anuj Nagpal"
-  avatar           : "DP.jpg"
+  name             : "Vikas Shah"
+  avatar           : "dp.jpg"
   bio              : "LinkedIn | Stanford | IIT Kanpur"
   # location         : "Location"
   employer         :
   # pubmed           : "https://www.ncbi.nlm.nih.gov/pubmed/?term=john+snow"
   # googlescholar    : "http://yourfullgooglescholarurl.com"
-  email            : "anujnag@stanford.edu"
+  email            : "vikasshah8218@gmail.com"
   researchgate     :  # example: "https://www.researchgate.net/profile/yourprofile"
   uri              :
   bitbucket        :
@@ -96,13 +96,13 @@ author:
   flickr           :
   facebook         :
   foursquare       :
-  github           : "anujnag"
+  github           : "vikasshah8218"
   google_plus      :
   keybase          :
-  instagram        : "_anuj_nagpal_"
+  instagram        : "er_mr_shah"
   impactstory      : #"https://profiles.impactstory.org/u/xxxx-xxxx-xxxx-xxxx"
   lastfm           :
-  linkedin         : "anujnag"
+  linkedin         : "vikasshah8218"
   # orcid            : "http://orcid.org/yourorcidurl"
   pinterest        :
   soundcloud       :
