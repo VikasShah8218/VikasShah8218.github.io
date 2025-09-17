@@ -46,7 +46,7 @@
       <div class="flex items-center justify-between px-4 py-3">
         <a href="index.html" class="flex items-center gap-3">
           <img src="assets/favicon.svg" alt="Logo" class="h-7 w-7">
-          <span class="font-semibold tracking-tight">Vikas Shah</span>
+          <span class="font-semibold tracking-tight">Your Name</span>
         </a>
         <button class="inline-flex items-center justify-center rounded-xl px-3 py-2 ring-1 ring-white/15 hover:bg-white/5 md:hidden" aria-label="Menu" onclick="document.getElementById('nav').classList.toggle('hidden')">
           <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 24 24" fill="none" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M4 6h16M4 12h16M4 18h16"/></svg>
@@ -63,69 +63,21 @@
   </div>
 </header>
 <main class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-  <!-- Hero -->
-  <section class="mt-4 grid items-center gap-8 md:grid-cols-2">
-    <div class="glass rounded-3xl p-8 md:p-10">
-      <div class="inline-flex items-center gap-2 rounded-full border border-white/10 bg-white/5 px-3 py-1 text-xs text-slate-300">
-        <span class="h-2 w-2 rounded-full bg-emerald-400 animate-pulse"></span>
-        Open to work & collaborations
-      </div>
-      <h1 class="mt-5 text-4xl font-bold tracking-tight sm:text-5xl">Hi, I’m <span class="text-brand-300">Vikas Shah</span>.</h1>
-      <p class="mt-4 text-slate-300 leading-relaxed">Software Engineer focused on building secure, scalable systems — from APIs and microservices to computer vision and SOC automation. I love shipping things that matter.</p>
-      <div class="mt-6 flex flex-wrap items-center gap-3">
-        <a href="resume.html" class="rounded-2xl bg-brand-500 px-5 py-3 font-medium text-white shadow-lg shadow-brand-500/25 hover:bg-brand-400">View Resume (PDF)</a>
-        <a href="experience.html" class="rounded-2xl px-5 py-3 font-medium text-slate-200 ring-1 ring-white/15 hover:bg-white/5">See Experience</a>
-      </div>
-      <dl class="mt-6 grid grid-cols-3 gap-4 text-center">
-        <div class="rounded-2xl bg-white/5 p-4">
-          <dt class="text-xs text-slate-400">Years</dt>
-          <dd class="text-2xl font-semibold">3+</dd>
-        </div>
-        <div class="rounded-2xl bg-white/5 p-4">
-          <dt class="text-xs text-slate-400">Projects</dt>
-          <dd class="text-2xl font-semibold">25+</dd>
-        </div>
-        <div class="rounded-2xl bg-white/5 p-4">
-          <dt class="text-xs text-slate-400">Domains</dt>
-          <dd class="text-2xl font-semibold">NAC · VMS · SOC</dd>
-        </div>
-      </dl>
+  <header class="mt-4 flex items-end justify-between">
+    <div>
+      <h1 class="text-3xl font-bold tracking-tight">Resume</h1>
+      <p class="mt-2 text-slate-300">Embed your PDF resume below. Replace <code>assets/resume.pdf</code> with your file.</p>
     </div>
-    <div class="glass relative overflow-hidden rounded-3xl p-0">
-      <img src="assets/avatar.svg" alt="Avatar" class="w-full h-full object-cover">
-      <div class="pointer-events-none absolute inset-0 bg-gradient-to-t from-black/40 to-transparent"></div>
-    </div>
-  </section>
+    <a href="assets/resume.pdf" class="rounded-xl px-4 py-2 ring-1 ring-white/15 hover:bg-white/5">Download PDF</a>
+  </header>
 
-  <!-- Highlights -->
-  <section class="mt-10 grid gap-6 md:grid-cols-3">
-    <article class="glass rounded-2xl p-6">
-      <div class="flex items-center gap-3">
-        <div class="rounded-xl bg-emerald-500/15 p-2 ring-1 ring-emerald-400/30">
-          <svg class="h-5 w-5 text-emerald-300" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2a10 10 0 1 0 10 10A10.011 10.011 0 0 0 12 2Zm1 15h-2v-2h2Zm0-4h-2V7h2Z"/></svg>
-        </div>
-        <h3 class="font-semibold">Secure by Design</h3>
+  <section class="mt-6 glass rounded-2xl p-4">
+    <object data="assets/resume.pdf#view=FitH" type="application/pdf" class="w-full h-[80vh] rounded-xl">
+      <div class="p-6 text-center text-slate-300">
+        <p class="mb-3">Your browser can’t display the PDF. You can <a class="underline" href="assets/resume.pdf">download it here</a>.</p>
+        <p class="text-sm">Make sure a file exists at <code>/assets/resume.pdf</code>.</p>
       </div>
-      <p class="mt-3 text-sm text-slate-300 leading-relaxed">Zero-trust mindset with experience in NAC, SOC, and policy engines. I build with safety nets, auditability, and explainability.</p>
-    </article>
-    <article class="glass rounded-2xl p-6">
-      <div class="flex items-center gap-3">
-        <div class="rounded-xl bg-indigo-500/15 p-2 ring-1 ring-indigo-400/30">
-          <svg class="h-5 w-5 text-indigo-300" viewBox="0 0 24 24" fill="currentColor"><path d="M3 3h18v2H3Zm0 14h18v4H3Zm0-8h18v6H3Z"/></svg>
-        </div>
-        <h3 class="font-semibold">APIs & Microservices</h3>
-      </div>
-      <p class="mt-3 text-sm text-slate-300 leading-relaxed">FastAPI, Django REST, Kafka, Redis. I design modular services and reliable pipelines with clear interfaces.</p>
-    </article>
-    <article class="glass rounded-2xl p-6">
-      <div class="flex items-center gap-3">
-        <div class="rounded-xl bg-cyan-500/15 p-2 ring-1 ring-cyan-400/30">
-          <svg class="h-5 w-5 text-cyan-300" viewBox="0 0 24 24" fill="currentColor"><path d="M12 7V3L1 9l11 6 9-4.91V17h2V9z"/></svg>
-        </div>
-        <h3 class="font-semibold">Edge & Vision</h3>
-      </div>
-      <p class="mt-3 text-sm text-slate-300 leading-relaxed">Real-time video analytics and ANPR with GPU acceleration. From camera to dashboard with measurable impact.</p>
-    </article>
+    </object>
   </section>
 </main>
   <footer class="mt-16 border-t border-white/10">
