@@ -89,18 +89,18 @@
       <p class="mt-2 text-slate-300">Software Development Engineer with 2+ years' experience in full-stack development, backend engineering, and hardware integration</p>
     </div>
     <div class="resume-actions flex gap-3">
-      <a href="assets\Mr_Shah_Resume.pdf" download class="rounded-xl bg-brand-500 px-4 py-2 font-medium text-white hover:bg-brand-400 transition-colors flex items-center">
+      <a href="Mr Shah Resume (1).pdf" download class="rounded-xl bg-brand-500 px-4 py-2 font-medium text-white hover:bg-brand-400 transition-colors flex items-center">
         <svg class="h-5 w-5 mr-1.5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
           <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4" />
         </svg>
-        Download
+        Download PDF
       </a>
       <a href="contact.html" class="rounded-xl px-4 py-2 font-medium ring-1 ring-white/15 hover:bg-white/5 transition-colors flex items-center">
         <svg class="h-5 w-5 mr-1.5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
           <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
         </svg>
-        Contact
-           </a>
+        Contact Me
+      </a>
     </div>
   </header>
 
@@ -135,7 +135,7 @@
           </svg>
           Fullscreen
         </button>
-        <a href="assets\Mr_Shah_Resume.pdf" target="_blank" class="resume-option rounded-lg bg-white/5 px-3 py-1.5 text-xs text-slate-300 ring-1 ring-white/10 hover:bg-white/10">
+        <a href="Mr Shah Resume (1).pdf" target="_blank" class="resume-option rounded-lg bg-white/5 px-3 py-1.5 text-xs text-slate-300 ring-1 ring-white/10 hover:bg-white/10">
           <svg class="h-4 w-4 inline mr-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
           </svg>
@@ -146,20 +146,20 @@
     
     <!-- PDF Display with mobile fallback -->
     <div id="pdf-viewer">
-      <object data="assets\Mr_Shah_Resume.pdf#view=FitH" type="application/pdf" class="pdf-object w-full h-[70vh] rounded-xl" id="pdf-object">
+      <object data="Mr Shah Resume (1).pdf#view=FitH" type="application/pdf" class="pdf-object w-full h-[70vh] rounded-xl" id="pdf-object">
         <div class="p-6 text-center text-slate-300">
           <svg class="h-12 w-12 mx-auto text-slate-400 mb-3" fill="none" viewBox="0 0 24 24" stroke="currentColor">
             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
           </svg>
           <p class="mb-3">Your browser has trouble displaying the PDF directly.</p>
           <div class="flex flex-col sm:flex-row gap-3 justify-center mt-4">
-            <a href="assets\Mr_Shah_Resume.pdf" download class="rounded-xl bg-brand-500 px-4 py-2 font-medium text-white hover:bg-brand-400 transition-colors flex items-center justify-center">
+            <a href="Mr Shah Resume (1).pdf" download class="rounded-xl bg-brand-500 px-4 py-2 font-medium text-white hover:bg-brand-400 transition-colors flex items-center justify-center">
               <svg class="h-5 w-5 mr-1.5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4" />
               </svg>
-              Download
+              Download PDF
             </a>
-            <a href="assets\Mr_Shah_Resume.pdf" target="_blank" class="rounded-xl px-4 py-2 font-medium text-slate-200 ring-1 ring-white/15 hover:bg-white/5 transition-colors flex items-center justify-center">
+            <a href="Mr Shah Resume (1).pdf" target="_blank" class="rounded-xl px-4 py-2 font-medium text-slate-200 ring-1 ring-white/15 hover:bg-white/5 transition-colors flex items-center justify-center">
               <svg class="h-5 w-5 mr-1.5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
               </svg>
@@ -251,61 +251,5 @@
     </div>
     <script>document.getElementById('year').textContent = new Date().getFullYear()</script>
   </footer>
-  <script>
-    document.addEventListener('DOMContentLoaded', function() {
-      // Check if mobile device
-      const isMobile = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
-      const mobileMessage = document.getElementById('mobile-message');
-      const pdfObject = document.getElementById('pdf-object');
-      
-      if (isMobile) {
-        mobileMessage.classList.remove('hidden');
-        
-        // Add a more prominent message for mobile users
-        const mobileAlert = document.createElement('div');
-        mobileAlert.className = 'mt-4 p-4 bg-brand-500/15 text-brand-300 rounded-xl border border-brand-400/30';
-        mobileAlert.innerHTML = `
-          <div class="flex items-start">
-            <svg class="h-5 w-5 mr-2 mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
-              <path fill-rule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7-4a1 1 0 11-2 0 1 1 0 012 0zM9 9a1 1 0 000 2v3a1 1 0 001 1h1a1 1 0 100-2v-3a1 1 0 00-1-1H9z" clip-rule="evenodd" />
-            </svg>
-            <p class="text-sm">Mobile users: For the best experience, download the PDF or open it in a new tab using the buttons above.</p>
-          </div>
-        `;
-        
-        pdfObject.parentNode.insertBefore(mobileAlert, pdfObject);
-      }
-      
-      // Check if PDF failed to load
-      setTimeout(function() {
-        const pdfDoc = pdfObject.contentDocument;
-        if (!pdfDoc || pdfDoc.body.childElementCount === 0) {
-          mobileMessage.classList.remove('hidden');
-        }
-      }, 2000);
-    });
-    
-    function toggleFullScreen() {
-      const pdfElement = document.getElementById('pdf-object');
-      
-      if (!document.fullscreenElement) {
-        if (pdfElement.requestFullscreen) {
-          pdfElement.requestFullscreen();
-        } else if (pdfElement.webkitRequestFullscreen) {
-          pdfElement.webkitRequestFullscreen();
-        } else if (pdfElement.msRequestFullscreen) {
-          pdfElement.msRequestFullscreen();
-        }
-      } else {
-        if (document.exitFullscreen) {
-          document.exitFullscreen();
-        } else if (document.webkitExitFullscreen) {
-          document.webkitExitFullscreen();
-        } else if (document.msExitFullscreen) {
-          document.msExitFullscreen();
-        }
-      }
-    }
-  </script>
 </body>
 </html>
