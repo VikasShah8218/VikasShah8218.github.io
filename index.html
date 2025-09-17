@@ -6,14 +6,13 @@
   <meta name="theme-color" content="#0ea5e9" />
   <meta name="description" content="Professional portfolio and resume" />
   <meta property="og:type" content="website" />
-  <meta property="og:title" content="Your Name — Portfolio" />
-  <meta property="og:description" content="Software Engineer • Builder • Problem Solver" />
+  <meta property="og:title" content="Vikas Shah — Portfolio" />
+  <meta property="og:description" content="Software Development Engineer (2+ yrs) — Django · FastAPI · React · AWS · Kafka. Scalable systems, DevOps, and video analytics." />
   <meta property="og:image" content="assets/cover.png" />
   <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
-  <title>Your Name — Portfolio</title>
+  <title>Vikas Shah — Portfolio</title>
   <script src="https://cdn.tailwindcss.com"></script>
   <script>
-    // Tailwind config tweaks
     tailwind.config = {
       theme: {
         extend: {
@@ -24,7 +23,6 @@
     }
   </script>
   <style>
-    /* Subtle animated gradient background */
     .bg-animate {
       background: radial-gradient(1200px 800px at 10% 10%, rgba(6,182,212,0.18), transparent 60%),
                   radial-gradient(900px 700px at 90% 20%, rgba(99,102,241,0.16), transparent 60%),
@@ -40,106 +38,139 @@
   </style>
 </head>
 <body class="min-h-screen text-slate-100 bg-animate">
-<header class="sticky top-0 z-50">
-  <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-    <nav class="glass mt-4 mb-6 rounded-2xl">
-      <div class="flex items-center justify-between px-4 py-3">
-        <a href="index.html" class="flex items-center gap-3">
-          <img src="assets/favicon.svg" alt="Logo" class="h-7 w-7">
-          <span class="font-semibold tracking-tight">Vikas Shah</span>
-        </a>
-        <button class="inline-flex items-center justify-center rounded-xl px-3 py-2 ring-1 ring-white/15 hover:bg-white/5 md:hidden" aria-label="Menu" onclick="document.getElementById('nav').classList.toggle('hidden')">
-          <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 24 24" fill="none" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M4 6h16M4 12h16M4 18h16"/></svg>
-        </button>
-        <ul id="nav" class="hidden md:flex items-center gap-1">
-          <li><a href="index.html" class="block rounded-xl px-4 py-2 hover:bg-white/5">Home</a></li>
-          <li><a href="experience.html" class="block rounded-xl px-4 py-2 hover:bg-white/5">Experience</a></li>
-          <li><a href="education.html" class="block rounded-xl px-4 py-2 hover:bg-white/5">Education</a></li>
-          <li><a href="resume.html" class="block rounded-xl px-4 py-2 hover:bg-white/5">Resume</a></li>
-          <li><a href="contact.html" class="block rounded-xl px-4 py-2 hover:bg-white/5">Contact</a></li>
-        </ul>
-      </div>
-    </nav>
-  </div>
-</header>
-<main class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-  <!-- Hero -->
-  <section class="mt-4 grid items-center gap-8 md:grid-cols-2">
-    <div class="glass rounded-3xl p-8 md:p-10">
-      <div class="inline-flex items-center gap-2 rounded-full border border-white/10 bg-white/5 px-3 py-1 text-xs text-slate-300">
-        <span class="h-2 w-2 rounded-full bg-emerald-400 animate-pulse"></span>
-        Open to work & collaborations
-      </div>
-      <h1 class="mt-5 text-4xl font-bold tracking-tight sm:text-5xl">Hi, I’m <span class="text-brand-300">Vikas Shah</span>.</h1>
-      <p class="mt-4 text-slate-300 leading-relaxed">Software Engineer focused on building secure, scalable systems — from APIs and microservices to computer vision and SOC automation. I love shipping things that matter.</p>
-      <div class="mt-6 flex flex-wrap items-center gap-3">
-        <a href="resume.html" class="rounded-2xl bg-brand-500 px-5 py-3 font-medium text-white shadow-lg shadow-brand-500/25 hover:bg-brand-400">View Resume (PDF)</a>
-        <a href="experience.html" class="rounded-2xl px-5 py-3 font-medium text-slate-200 ring-1 ring-white/15 hover:bg-white/5">See Experience</a>
-      </div>
-      <dl class="mt-6 grid grid-cols-3 gap-4 text-center">
-        <div class="rounded-2xl bg-white/5 p-4">
-          <dt class="text-xs text-slate-400">Years</dt>
-          <dd class="text-2xl font-semibold">3+</dd>
-        </div>
-        <div class="rounded-2xl bg-white/5 p-4">
-          <dt class="text-xs text-slate-400">Projects</dt>
-          <dd class="text-2xl font-semibold">25+</dd>
-        </div>
-        <div class="rounded-2xl bg-white/5 p-4">
-          <dt class="text-xs text-slate-400">Domains</dt>
-          <dd class="text-2xl font-semibold">NAC · VMS · SOC</dd>
-        </div>
-      </dl>
-    </div>
-    <div class="glass relative overflow-hidden rounded-3xl p-0">
-      <img src="assets/avatar.svg" alt="Avatar" class="w-full h-full object-cover">
-      <div class="pointer-events-none absolute inset-0 bg-gradient-to-t from-black/40 to-transparent"></div>
-    </div>
-  </section>
 
-  <!-- Highlights -->
-  <section class="mt-10 grid gap-6 md:grid-cols-3">
-    <article class="glass rounded-2xl p-6">
-      <div class="flex items-center gap-3">
-        <div class="rounded-xl bg-emerald-500/15 p-2 ring-1 ring-emerald-400/30">
-          <svg class="h-5 w-5 text-emerald-300" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2a10 10 0 1 0 10 10A10.011 10.011 0 0 0 12 2Zm1 15h-2v-2h2Zm0-4h-2V7h2Z"/></svg>
+  <!-- Header / Nav -->
+  <header class="sticky top-0 z-50">
+    <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+      <nav class="glass mt-4 mb-6 rounded-2xl">
+        <div class="flex items-center justify-between px-4 py-3">
+          <a href="index.html" class="flex items-center gap-3">
+            <img src="assets/favicon.svg" alt="Logo" class="h-7 w-7">
+            <span class="font-semibold tracking-tight">Vikas Shah</span>
+          </a>
+          <button class="inline-flex items-center justify-center rounded-xl px-3 py-2 ring-1 ring-white/15 hover:bg-white/5 md:hidden" aria-label="Menu" onclick="document.getElementById('nav').classList.toggle('hidden')">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 24 24" fill="none" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M4 6h16M4 12h16M4 18h16"/></svg>
+          </button>
+          <ul id="nav" class="hidden md:flex items-center gap-1">
+            <li><a href="index.html" class="block rounded-xl px-4 py-2 hover:bg-white/5">Home</a></li>
+            <li><a href="experience.html" class="block rounded-xl px-4 py-2 hover:bg-white/5">Experience</a></li>
+            <li><a href="education.html" class="block rounded-xl px-4 py-2 hover:bg-white/5">Education</a></li>
+            <li><a href="resume.html" class="block rounded-xl px-4 py-2 hover:bg-white/5">Resume</a></li>
+            <li><a href="contact.html" class="block rounded-xl px-4 py-2 hover:bg-white/5">Contact</a></li>
+          </ul>
         </div>
-        <h3 class="font-semibold">Secure by Design</h3>
-      </div>
-      <p class="mt-3 text-sm text-slate-300 leading-relaxed">Zero-trust mindset with experience in NAC, SOC, and policy engines. I build with safety nets, auditability, and explainability.</p>
-    </article>
-    <article class="glass rounded-2xl p-6">
-      <div class="flex items-center gap-3">
-        <div class="rounded-xl bg-indigo-500/15 p-2 ring-1 ring-indigo-400/30">
-          <svg class="h-5 w-5 text-indigo-300" viewBox="0 0 24 24" fill="currentColor"><path d="M3 3h18v2H3Zm0 14h18v4H3Zm0-8h18v6H3Z"/></svg>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Main -->
+  <main class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+    <!-- Single full-width hero with small avatar -->
+    <section class="mt-4">
+      <div class="glass rounded-3xl p-8 md:p-10">
+        <div class="flex items-center gap-5">
+          <img src="assets/avatar.jpg" alt="Vikas Shah" class="h-20 w-20 rounded-full ring-2 ring-white/20 object-cover">
+          <div>
+            <h1 class="text-4xl font-bold tracking-tight sm:text-5xl">Hi, I’m <span class="text-brand-300">Vikas Shah</span>.</h1>
+            <p class="mt-1 text-sm text-slate-300">Software Development Engineer (SDE) — Django · FastAPI · React · AWS · Kafka</p>
+          </div>
         </div>
-        <h3 class="font-semibold">APIs & Microservices</h3>
-      </div>
-      <p class="mt-3 text-sm text-slate-300 leading-relaxed">FastAPI, Django REST, Kafka, Redis. I design modular services and reliable pipelines with clear interfaces.</p>
-    </article>
-    <article class="glass rounded-2xl p-6">
-      <div class="flex items-center gap-3">
-        <div class="rounded-xl bg-cyan-500/15 p-2 ring-1 ring-cyan-400/30">
-          <svg class="h-5 w-5 text-cyan-300" viewBox="0 0 24 24" fill="currentColor"><path d="M12 7V3L1 9l11 6 9-4.91V17h2V9z"/></svg>
+
+        <div class="mt-5 inline-flex items-center gap-2 rounded-full border border-white/10 bg-white/5 px-3 py-1 text-xs text-slate-300">
+          <span class="h-2 w-2 rounded-full bg-emerald-400 animate-pulse"></span>
+          Open to work & collaborations
         </div>
-        <h3 class="font-semibold">Edge & Vision</h3>
+
+        <p class="mt-4 text-slate-300 leading-relaxed">
+          SDE with 2+ years across full‑stack, backend engineering, and hardware integration. Built ERP, VMS, Access Control, and ANPR apps using Django/FastAPI/React on PostgreSQL, Redis, Celery, Kafka. Passionate about scalable architecture, DevOps automation, and applied ML in video analytics.
+        </p>
+
+        <div class="mt-6 flex flex-wrap items-center gap-3">
+          <a href="resume.html" class="rounded-2xl bg-brand-500 px-5 py-3 font-medium text-white shadow-lg shadow-brand-500/25 hover:bg-brand-400">View Resume (PDF)</a>
+          <a href="experience.html" class="rounded-2xl px-5 py-3 font-medium text-slate-200 ring-1 ring-white/15 hover:bg-white/5">See Experience</a>
+          <a href="https://github.com/VikasShah8218" target="_blank" class="rounded-2xl px-5 py-3 font-medium text-slate-200 ring-1 ring-white/15 hover:bg-white/5">GitHub</a>
+          <a href="https://www.linkedin.com/in/mr-vikas-shah-248586253/" target="_blank" class="rounded-2xl px-5 py-3 font-medium text-slate-200 ring-1 ring-white/15 hover:bg-white/5">LinkedIn</a>
+        </div>
+
+        <!-- Tech stack badges -->
+        <div class="mt-4 flex flex-wrap gap-2 text-xs text-slate-200">
+          <span class="rounded-lg bg-white/5 px-3 py-1 ring-1 ring-white/10">Python</span>
+          <span class="rounded-lg bg-white/5 px-3 py-1 ring-1 ring-white/10">Django</span>
+          <span class="rounded-lg bg-white/5 px-3 py-1 ring-1 ring-white/10">FastAPI</span>
+          <span class="rounded-lg bg-white/5 px-3 py-1 ring-1 ring-white/10">React</span>
+          <span class="rounded-lg bg-white/5 px-3 py-1 ring-1 ring-white/10">Kafka</span>
+          <span class="rounded-lg bg-white/5 px-3 py-1 ring-1 ring-white/10">Redis</span>
+          <span class="rounded-lg bg-white/5 px-3 py-1 ring-1 ring-white/10">Celery</span>
+          <span class="rounded-lg bg-white/5 px-3 py-1 ring-1 ring-white/10">Docker</span>
+          <span class="rounded-lg bg-white/5 px-3 py-1 ring-1 ring-white/10">Kubernetes</span>
+          <span class="rounded-lg bg-white/5 px-3 py-1 ring-1 ring-white/10">AWS</span>
+          <span class="rounded-lg bg-white/5 px-3 py-1 ring-1 ring-white/10">PostgreSQL</span>
+        </div>
+
+        <!-- Stats -->
+        <dl class="mt-6 grid grid-cols-3 gap-4 text-center">
+          <div class="rounded-2xl bg-white/5 p-4">
+            <dt class="text-xs text-slate-400">Experience</dt>
+            <dd class="text-2xl font-semibold">2+</dd>
+          </div>
+          <div class="rounded-2xl bg-white/5 p-4">
+            <dt class="text-xs text-slate-400">Devices Integrated</dt>
+            <dd class="text-2xl font-semibold">600+</dd>
+          </div>
+          <div class="rounded-2xl bg-white/5 p-4">
+            <dt class="text-xs text-slate-400">ANPR Cameras</dt>
+            <dd class="text-2xl font-semibold">200+</dd>
+          </div>
+        </dl>
       </div>
-      <p class="mt-3 text-sm text-slate-300 leading-relaxed">Real-time video analytics and ANPR with GPU acceleration. From camera to dashboard with measurable impact.</p>
-    </article>
-  </section>
-</main>
+    </section>
+
+    <!-- Highlights (from resume achievements) -->
+    <section class="mt-10 grid gap-6 md:grid-cols-3">
+      <article class="glass rounded-2xl p-6">
+        <div class="flex items-center gap-3">
+          <div class="rounded-xl bg-emerald-500/15 p-2 ring-1 ring-emerald-400/30">
+            <svg class="h-5 w-5" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2a10 10 0 1 0 10 10A10.011 10.011 0 0 0 12 2Zm1 15h-2v-2h2Zm0-4h-2V7h2Z"/></svg>
+          </div>
+          <h3 class="font-semibold">Enterprise Platforms</h3>
+        </div>
+        <p class="mt-3 text-sm text-slate-300 leading-relaxed">ERP, VMS, Access Control & ANPR with Django/FastAPI/React, PostgreSQL, Redis, Celery, Kafka. Improved response time by 30% and supported 5K+ daily sessions.</p>
+      </article>
+      <article class="glass rounded-2xl p-6">
+        <div class="flex items-center gap-3">
+          <div class="rounded-xl bg-indigo-500/15 p-2 ring-1 ring-indigo-400/30">
+            <svg class="h-5 w-5" viewBox="0 0 24 24" fill="currentColor"><path d="M3 3h18v2H3Zm0 14h18v4H3Zm0-8h18v6H3Z"/></svg>
+          </div>
+          <h3 class="font-semibold">Hardware & Integrations</h3>
+        </div>
+        <p class="mt-3 text-sm text-slate-300 leading-relaxed">Integrated 600+ devices (Moxa, Adam, IP cameras, HID Aero/Vertx, MiFare, UBio‑X). Reduced device latency 50% and integration failures 30% with robust drivers and monitoring.</p>
+      </article>
+      <article class="glass rounded-2xl p-6">
+        <div class="flex items-center gap-3">
+          <div class="rounded-xl bg-cyan-500/15 p-2 ring-1 ring-cyan-400/30">
+            <svg class="h-5 w-5" viewBox="0 0 24 24" fill="currentColor"><path d="M12 7V3L1 9l11 6 9-4.91V17h2V9z"/></svg>
+          </div>
+        <h3 class="font-semibold">Video Analytics & DevOps</h3>
+        </div>
+        <p class="mt-3 text-sm text-slate-300 leading-relaxed">50K+ vehicles/day over 200+ ANPR cameras (80%+ accuracy). Docker + Nginx + Gunicorn/Hypercorn CI/CD; 99% uptime; scaled backend for 1,000+ live feeds.</p>
+      </article>
+    </section>
+  </main>
+
+  <!-- Footer -->
   <footer class="mt-16 border-t border-white/10">
     <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
       <div class="flex flex-col sm:flex-row items-center justify-between gap-4 py-6">
-        <p class="text-sm text-slate-400">&copy; <span id="year"></span> Your Name. All rights reserved.</p>
+        <p class="text-sm text-slate-400">&copy; <span id="year"></span> Vikas Shah. All rights reserved.</p>
         <div class="flex items-center gap-4 text-slate-300">
-          <a href="#" class="hover:text-white">GitHub</a>
-          <a href="#" class="hover:text-white">LinkedIn</a>
-          <a href="mailto:you@example.com" class="hover:text-white">Email</a>
+          <a href="https://github.com/VikasShah8218" target="_blank" class="hover:text-white">GitHub</a>
+          <a href="https://www.linkedin.com/in/mr-vikas-shah-248586253/" target="_blank" class="hover:text-white">LinkedIn</a>
+          <a href="mailto:Vikasshah8218@gmail.com" class="hover:text-white">Email</a>
         </div>
       </div>
     </div>
     <script>document.getElementById('year').textContent = new Date().getFullYear()</script>
   </footer>
+
 </body>
 </html>
